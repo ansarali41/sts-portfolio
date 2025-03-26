@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -13,29 +13,30 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-16 md:py-24 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
-            <div className="inline-flex items-center justify-center px-4 py-2 mb-6 rounded-full border border-gray-700 bg-gray-800/50 backdrop-blur-sm">
-              <span className="animate-pulse mr-2 h-2 w-2 rounded-full bg-blue-400"></span>
-              <span className="text-sm text-gray-300">We're Hiring!</span>
-            </div>
-            
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-400 to-purple-500">
               Transforming Ideas into Digital Reality
             </h1>
-            
+
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              We are a team of passionate developers crafting innovative solutions for your business needs. From web applications to enterprise solutions, we deliver excellence.
+              We are a team of passionate developers crafting innovative
+              solutions for your business needs. From web applications to
+              enterprise solutions, we deliver excellence.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <button className="group relative px-6 py-3 rounded-lg overflow-hidden">
+              {/* <button className="group relative px-6 py-3 rounded-lg overflow-hidden">
                 <div className="absolute inset-0 w-full h-full transition-all duration-300 ease-out bg-gradient-to-r from-blue-600 via-blue-500 to-purple-500"></div>
                 <div className="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 ease-out bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.4),transparent_80%)]"></div>
-                <span className="relative text-white font-medium">Get Started</span>
+                <span className="relative text-white font-medium">
+                  Get Started
+                </span>
               </button>
-              
+
               <button className="group relative px-6 py-3 rounded-lg overflow-hidden bg-gray-800/50 backdrop-blur-sm border border-gray-700 hover:border-blue-500 transition-colors">
-                <span className="relative text-gray-300 group-hover:text-blue-400 transition-colors font-medium">Learn More</span>
-              </button>
+                <span className="relative text-gray-300 group-hover:text-blue-400 transition-colors font-medium">
+                  Learn More
+                </span>
+              </button> */}
             </div>
           </div>
 
@@ -43,7 +44,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl opacity-20 blur-3xl"></div>
             <div className="relative h-full w-full rounded-2xl border border-gray-800 bg-gray-900/50 backdrop-blur-sm p-4 transform hover:scale-[1.02] transition-transform duration-300">
               <Image
-                src="/hero-image.svg"
+                src="/hero-image.jpg"
                 alt="Hero Image"
                 fill
                 className="object-contain p-4"
@@ -56,8 +57,18 @@ const Hero = () => {
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
           <span className="text-gray-400 text-sm mb-2">Scroll</span>
-          <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          <svg
+            className="w-6 h-6 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
           </svg>
         </div>
       </div>
